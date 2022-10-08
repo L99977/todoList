@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  background: #CDCDCD;
+}
+
+header {
+  background: rgba(47, 47, 47, 0.98);
+  height: 50px;
+}
+
+/* 当设备宽度大于620px时，设置内容部分section宽度为600px  */
+@media screen and (min-width: 620px) {
+  section {
+    width: 600px;
+  }
+}
+
+/* 当设备宽度小于620px时， 设置内容部分section宽度为96% */
+@media screen and (max-width: 620px){
+  section {
+    width: 96%;
+  }
+  
+}
+section {
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+label {
+  color: #DDD;
+  font-size: 24px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 50px;
+  float: left;
+}
+
+#title {
+  width: 60%;
+  height: 24px;
+  float: right;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 12px;
+  text-indent: 10px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.24), 0 1px 6px rgba(0, 0, 0, 0.45) inset;
+}
+
+
+h2 {
+  position: relative;
+  padding: 20px 0;
+
+}
+
+h2>span {
+  position: absolute;
+  top: 22px;
+  right: 5px;
+  padding: 0 5px;
+  height: 20px;
+  border-radius: 20px;
+  background: #E6E6FA;
+  line-height: 22px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+footer {
+  color: #666;
+  font-size: 14px;
+  text-align: center
+}
+
+li {
+  height: 32px;
+  line-height: 32px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0 45px;
+  border-radius: 3px;
+  border-left: 5px solid #629A9C;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  position: relative;
+}
+
+li input {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+li a {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 14px;
+  height: 12px;
+  border-radius: 14px;
+  border: 6px double #FFF;
+  background: #CCC;
+}
+ul li{
+  border-left: 5px solid #999;
+  opacity: 0.5;
+}
